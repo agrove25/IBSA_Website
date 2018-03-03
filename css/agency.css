@@ -349,6 +349,11 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
 }
 
+.events-modal .modal-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
 @media only screen and (min-width: 600px) {
   .events-modal .modal-content h2 {
     font-size: 44px;
