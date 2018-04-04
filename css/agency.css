@@ -201,13 +201,18 @@ header.masthead {
   text-align: center;
   color: white;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-image: linear-gradient(rgba(8,8,8,0.45), rgba(8,8,8,0.45));
+}
+
+@media (min-width: 800px) {
+  header.masthead {
+    height: 100vh;
+  }
 }
 
 header.masthead .intro-text {
