@@ -137,11 +137,12 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-size:12px;
+  color: white;
+  font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:hover {
+#mainNav .navbar-brand:active {
   color: #fec503;
 }
 
@@ -159,6 +160,10 @@ img::-moz-selection {
 }
 
 @media (min-width: 992px) {
+    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:hover {
+      color: #fec503;
+    }
+
   #mainNav {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -203,7 +208,6 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
   background-image: linear-gradient(rgba(8,8,8,0.45), rgba(8,8,8,0.45));
-    
 }
 
 header.masthead .intro-text {
@@ -228,14 +232,22 @@ header.masthead .intro-text .intro-heading {
 }
 
 header.masthead .intro-text>img {
-  margin-top: -35px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 32%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
 }
 
 @media (min-width: 768px) {
+   header.masthead .intro-text>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+  } 
+
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
