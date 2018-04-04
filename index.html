@@ -11,7 +11,7 @@
     <title>IBSA - Indonesian Bruin Student Association</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+      <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">   
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,9 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
@@ -30,7 +33,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">IBSA LOGO</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <!-- <img src="img/header-logo.png" style="height:6vh"> -->
+          INDONESIAN BRUIN<br>
+          STUDENT ASSOCIATION
+        </a>
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -43,7 +51,7 @@
               <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="#team">Board</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -57,15 +65,15 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
+          <img src="img/header-bird.png">
           <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-          <div class="intro-heading text-uppercase">INSERT CENTERED FLYING BIRD HERE</div>
           <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
         </div>
       </div>
     </header>
 
     <!-- Services -->
-    <section id="about">
+    <section class="bg-white" id="about">
       <div class="container">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">About Us</h2>
@@ -96,7 +104,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/events/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/ibsaCup2018-full.jpg" alt="">
             </a>
             <div class="events-caption">
               <h4>IBSA Basketball Cup 2018</h4>
@@ -165,9 +173,9 @@
                     <li>Location: 1401 Memorial Park Olympic Blvd, Santa Monica</li>
                     <li>Contact: Martinus Benito (206-558-8802)
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <!-- <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Window</button>
+                    Close Window</button> -->
                 </div>
               </div>
             </div>
@@ -176,7 +184,7 @@
       </div>
     </div>
 
-    <section id="team">
+    <section class="bg-white" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -274,7 +282,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="bg-white">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -303,6 +311,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/backstretch.js"></script>
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
@@ -310,6 +319,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.js"></script>
+
+    <script type="text/javascript">
+                $.backstretch([
+                    "img/header/1.jpg",
+                    "img/header/2.jpg",
+                    "img/header/3.jpg",
+                    "img/header/4.jpg",
+                    "img/header/5.jpg"
+                ], {duration: 3500, fade: 1500});
+            </script>
 
   </body>
 
