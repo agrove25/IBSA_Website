@@ -510,9 +510,48 @@ header.masthead .intro-text>img {
   }
 }
 
+#team .carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  color: #696969;
+}
+
+#team .carousel-control-prev-icon,
+#team .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+}
+
+#team .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 3em;
+  font-weight: bold;
+  color: #696969;
+}
+
+#team .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 3em;
+  font-weight: bold;
+  color: #696969;
+}
+
+#team .carousel-indicators li {
+  background-color: #696969;
+  background-color: rgba(70,70,70,.25);
+}
+
+#team .carousel-indicators .active {
+  background-color: #696969;
+}
+
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
