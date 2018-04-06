@@ -14,10 +14,7 @@
         width = window.innerWidth;
         height = window.innerHeight;
         target = {x: 0, y: height - 50};
-
-        largeHeader = document.getElementById('large-header');
-        largeHeader.style.height = height+'px';
-
+        
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
         canvas.height = height;
