@@ -450,14 +450,16 @@
     <script src="js/agency.js"></script>
 
     <script type="text/javascript">
-                $.backstretch([
-                    "img/header/1.jpg",
-                    "img/header/2.jpg",
-                    "img/header/3.jpg",
-                    "img/header/4.jpg",
-                    "img/header/5.jpg"
-                ], {duration: 3500, fade: 1500});
-            </script>
+        if ($(window).width() > 800) {
+		    $.backstretch([
+		        "img/header/1.jpg",
+		        "img/header/2.jpg",
+		        "img/header/3.jpg",
+		        "img/header/4.jpg",
+		        "img/header/5.jpg"
+		    ], {duration: 3500, fade: 1500});
+		}
+	</script>
 
   </body>
 

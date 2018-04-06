@@ -211,6 +211,12 @@ header.masthead {
   background-image: linear-gradient(rgba(8,8,8,0.45), rgba(8,8,8,0.45));
 }
 
+@media only screen and (max-width: 600px) {
+  header.masthead {
+    background-image: linear-gradient(rgba(8,8,8,0.45), rgba(8,8,8,0.45)), url("../img/header/1.jpg");
+  }
+}
+
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
