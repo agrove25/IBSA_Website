@@ -27,6 +27,13 @@ a:hover {
   color: #fed136 !important;
 }
 
+@media only screen and (max-width: 800px) {
+  .mobileHide { display: none; }
+}
+@media only screen and (min-width: 799px) {
+  .mobileShow { display: none; }
+}
+
 h1,
 h2,
 h3,
@@ -435,9 +442,9 @@ header.masthead .intro-text>img {
 .events-modal .close-modal {
   position: absolute;
   top: 25px;
-  right: 10px;
-  width: 75px;
-  height: 75px;
+  right: 25px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background-color: transparent;
 }
@@ -451,7 +458,7 @@ header.masthead .intro-text>img {
   z-index: 1051;
   width: 1px;
   height: 35px;
-  margin-left: 35px;
+  margin-left: 17px;
   /* IE 9 */
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
